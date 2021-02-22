@@ -1,0 +1,326 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens  1280px-1705px */
+@media only screen and (max-width : 1795px)
+  .slider
+    .slide-content
+      margin: 40% 12%
+      h2
+        font-size: 36px
+
+  aside
+    #burger-menu
+      .burger-button
+        display: none
+
+  .services-section
+    .text-wrapper
+      h4
+        font-size: 20px
+
+  .services-section
+    .text-wrapper
+      span
+        font-size: 14px
+
+  %h3-style
+    font-size: 30px
+    border-bottom: 10px solid black
+
+  .our-rewards
+    .trusted
+      h3
+        font-size: 30px
+
+  .our-rewards
+    .trusted
+      span
+        font-size: 16px
+
+  .articles-section
+    span
+      font-size: 16px
+
+  .articles-section
+    .art-content
+      .art-category
+        font-size: 10px
+
+  .articles-section
+    .art-content
+      .art-title
+        font-size: 16px
+
+  footer
+    .footer-wrapper
+      .foot-left
+        p
+          font-size: 20px
+
+  footer
+    .footer-wrapper
+      .foot-right
+          font-size: 10px
+
+  footer
+    .footer-wrapper
+      .foot-copy
+        span
+          font-size: 8px
+
+  footer
+    .footer-wrapper
+      .foot-copy
+        p
+          font-size: 10px
+
+
+/* Medium Devices, Desktops 768px-1281px */
+@media only screen and (max-width : 1281px)
+  aside
+    z-index: 1
+    #burger-menu
+      margin-left: 7%
+      .burger-button
+        display: grid
+        height: 60px
+
+      .aside-menu
+        nav
+          margin-bottom: 0%
+          ul
+            li
+              a
+                font-size: 12px
+                line-height: 1
+                font-family: ProximaNovaBold
+
+      .contact-links
+        display: grid
+
+      .contact-button
+        font-size: 10px
+        height: 35px
+        justify-self: center
+
+  .page
+    grid-template-columns: 100%
+    grid-template-rows: auto
+    grid-template-areas: "page0" "page1" "page2" "page3"
+
+  aside
+    height: 75px
+    min-height: 60px
+    grid-area: page0
+    grid-gap: 50px
+    width: 100%
+    grid-template-columns: 1fr 1fr
+    align-items: center
+
+    .aside-logo
+      height: 60px
+      justify-self: start
+      margin: 5px 5px 5px 5px
+      background-size: contain
+      background-position: center
+      align-self: start
+
+    .burger-button
+      display: grid
+      align-self: center
+      height: 60px
+      margin-right: 10%
+    .aside-menu
+      display: none
+    .contact-links
+      display: none
+
+  .services-section
+    .service-block
+      height: 100%
+
+
+  .slider
+    .slide-content
+      margin: 35% 5%
+      h2
+        font-size: 28px
+
+  aside
+    .aside-menu
+      margin-left: 7%
+      ul
+        li
+          a
+            font-size: 8px
+            line-height: 1.5
+            font-family: ProximaNovaBold
+
+  .contact-button
+    font-size: 8px
+    height: 35px
+    justify-self: center
+
+  .services-section
+    .text-wrapper
+      h4
+        font-size: 16px
+
+  .services-section
+    .text-wrapper
+      span
+        font-size: 12px
+
+  %h3-style
+    font-size: 24px
+    border-bottom: 10px solid black
+
+  .our-rewards
+    .trusted
+      h3
+        font-size: 24px
+
+  .our-rewards
+    .trusted
+      span
+        font-size: 12px
+
+  .articles-section
+    span
+      font-size: 12px
+
+  .articles-section
+    .art-content
+      .art-category
+        font-size: 8px
+
+  .articles-section
+    .art-content
+      .art-title
+        font-size: 12px
+
+  footer
+    .footer-wrapper
+      .foot-left
+        p
+          font-size: 16px
+
+  footer
+    .footer-wrapper
+      .foot-right
+          font-size: 8px
+
+  footer
+    .footer-wrapper
+      .foot-copy
+        span
+          font-size: 6px
+
+  footer
+    .footer-wrapper
+      .foot-copy
+        p
+          font-size: 8px
+
+  footer
+    .footer-wrapper
+      .foot-copyElements
+        grid-template-columns: 1fr
+        margin: auto
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .slider
+    .slide-content
+      width: 75%
+      margin: 65% 5%
+      h2
+        font-size: 22px
+
+
+  .services-section
+    grid-template-columns: 85vw
+    margin-right: 0px
+    margin-left: 0px
+
+    .text-wrapper
+      h4
+        font-size: 20px
+    .text-wrapper
+      span
+        font-size: 16px
+
+    .services-section
+      .service-block
+        height: 40vw
+
+  .articles-section
+    .art-item
+      grid-template-columns: 1fr
+
+  .articles-section
+    .art-content
+      margin-top: 5%
+
+  .articles-section
+    .art-img img
+      height: 39.5vw
+      width: 39.5vw
+
+  %h3-style
+    font-size: 20px
+    border-bottom: 10px solid black
+
+  footer
+    .footer-wrapper
+      .foot-left
+        p
+          font-size: 12px
+
+  main
+    .our-rewards
+      .trusted
+        .button-more
+          width: 10%
+          height: 30px
+
+//
+//
+//
+///* Extra Small Devices, Phones */
+//@media only screen and (max-width : 480px)
+//
+//
+///* Custom, iPhone Retina */
+//@media only screen and (max-width : 320px)
+///**/
+//
+//
+///*==========  Mobile First  ==========*/
+//
+///* Custom, iPhone Retina */
+//@media only screen and (min-width : 320px)
+///**/
+//
+//
+///* Extra Small Devices, Phones */
+//@media only screen and (min-width : 480px)
+///**/
+//
+//
+///* Small Devices, Tablets */
+//@media only screen and (min-width : 768px)
+///**/
+//
+//
+///* Medium Devices, Desktops */
+//@media only screen and (min-width : 992px)
+///**/
+//
+//
+///* Large Devices, Wide Screens */
+//@media only screen and (min-width : 1200px)
+///**/
+

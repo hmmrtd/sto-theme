@@ -1,0 +1,571 @@
+@import fonts
+@import vars
+
+
+body
+  display: grid
+  margin: 0
+
+.grid
+  display: grid
+.flex
+  display: flex
+
+h2
+  margin: 0px
+  font-family: Lasco-Bold
+  font-size: 2.5vw
+  margin-left: 13.5vw
+  &::before
+    content: ""
+    position: absolute
+    margin-top: 1.8vw
+    margin-left: -3.3vw
+    width: 3vw
+    height: 2px
+    background-image: -webkit-linear-gradient(117deg, #1c6bee 0%, #0748bd 100%)
+    background-image: -ms-linear-gradient(117deg, #1c6bee 0%, #0748bd 100%)
+
+.screen-title
+  height: 10vh
+  display: flex
+  align-items: center
+
+hr
+  width: 90%
+  height: 0.2px
+  padding: 0px
+  margin: 0px
+  margin: auto
+  margin-top: 0px
+
+
+/*-------------------------------- F I R S T   S C R E E N------------------------------*/
+
+.first-screen
+    height: 100vh
+    width: 100%
+
+
+.login-line
+  width: 100%
+  height: 4vh
+  background-color: black
+  align-content: space-around
+  .login-wrapper
+    width: 80%
+    height: 80%
+    margin-left: $first-string
+    display: flex
+    align-self: center
+    span
+      color: white
+      align-self: center
+    a
+      color: white
+      font-family: Roboto-Regular
+      font-size: 1.2vh
+      text-transform: uppercase
+      align-self: center
+
+
+.header
+  height: 10vh
+  width: 100%
+  background: url(../img/menu-overlay.png) repeat
+  justify-content: center
+
+  .header-wrapper
+    width: 90vw
+    height: 80%
+    align-self: center
+    align-content: center
+    justify-content: space-between
+
+.nav-block
+  width: 45%
+  justify-content: space-between
+
+.logo
+    background: url(../img/logo.png) no-repeat center
+    height: 80%
+    width: 15%
+    background-size: contain
+    align-self: center
+
+nav
+  width: 82%
+  display: flex
+  .main-nav
+    text-decoration: none
+    list-style-type: none
+    padding-left: 0
+    justify-content: space-between
+    width: 100%
+    li
+      align-self: center
+      a
+        text-decoration: none
+        color: white
+        text-transform: uppercase
+        font-family: Roboto-Bold
+        font-size: 1.2vw
+
+.info-links
+  justify-self: flex-end
+  width: 42%
+  justify-content: space-between
+
+.location
+  justify-content: space-between
+  width: 30%
+  .location-icon
+    align-self: center
+  .address-info
+    align-self: center
+  span
+    color: white
+    font-family: Lasco-Regular
+    font-size: 0.85vw
+  i
+    color: white
+    font-size: 2.3vw
+    align-self: center
+  a
+    color: white
+    font-size: 0.6vw
+    font-family: Lasco-Regular
+
+.social-links
+  align-self: center
+  .social-icons
+    justify-content: space-evenly
+
+  span
+    color: white
+    font-family: Lasco-Regular
+    font-size: 0.7vw
+    text-transform: uppercase
+    align-self: center
+    justify-self: center
+  i
+    color: white
+    font-size: 2vw
+
+.working-hours
+  justify-content: space-evenly
+  width: 38%
+  align-self: center
+  i
+    color: white
+    font-size: 2.3vw
+    align-self: center
+
+  span
+    color: white
+    font-family: Lasco-Regular
+    font-size: 0.7vw
+
+  .phone-number
+    font-size: 1.2vw
+
+  a
+    color: white
+    font-size: 0.6vw
+    font-family: Lasco-Regular
+
+
+.USP
+  margin-top: 15%
+  margin-left: $second-string
+  .service-name
+    color: white
+    font-family: Roboto-Bold
+    font-size: 4.5vw
+    margin: 0px 0px 0.5vw 0px
+  .slogan
+    margin-left: 3.2vw
+    color: white
+    font-family: Lasco-Bold
+    font-size: 1.1vw
+    letter-spacing: 0.27vw
+    &::before
+      content: ""
+      position: absolute
+      margin-top: 0.6vw
+      margin-left: -3.3vw
+      width: 3vw
+      height: 2px
+      background-image: -webkit-linear-gradient(117deg, #1c6bee 0%, #0748bd 100%)
+      background-image: -ms-linear-gradient(117deg, #1c6bee 0%, #0748bd 100%)
+
+  ul
+    list-style: none
+    padding-left: 0px
+    color: white
+    font-family: Roboto-Regular
+    font-size: 1.5vw
+
+.btn-main
+    background-image: -webkit-linear-gradient(117deg, #1c6bee 0%, #0748bd 100%)
+    background-image: -ms-linear-gradient(117deg, #1c6bee 0%, #0748bd 100%)
+    width: 5vw
+    color: white
+    -webkit-border-radius: 2vw
+    border-radius: 2vw
+    font-family: Lasco-Regular
+    font-size: 1vw
+    padding: 1vw 3vw 1vw 4.5vw
+    display: inline-block
+    text-decoration: none
+    &:hover
+      -webkit-box-shadow: 2px 2px 15px 0px #1cabee
+      box-shadow: 2px 2px 15px 0px #1cabee
+
+
+video
+  z-index: -1
+  position: absolute
+  top: 0px
+  margin: 0px
+  min-width: 100%
+  max-height: 92vh
+  object-fit: cover
+  overflow: hidden
+  display: block
+
+
+/*-------------------------------- S E C O N D   S C R E E N------------------------------*/
+
+
+.second-screen
+  width: 100%
+  height: 100vh
+  border-bottom: 5px dashed #000
+
+.container
+  margin-left: 10vw
+  width: 80vw
+  height: 80vh
+  flex-wrap: wrap
+
+.intro-text
+  font-family: Roboto-Regular
+  font-size: 1vw
+  line-height: 1.5
+
+/*-------------------------------- Advantages------------------------------*/
+
+.our-advantages
+  display: flex
+  justify-content: space-evenly
+  width: 95%
+  flex-wrap: nowrap
+
+.advantage-item
+  width: 30%
+  justify-content: center
+  align-self: baseline
+
+.a-icon, .a-title, .a-description
+  justify-self: center
+
+.a-icon
+  font-size: 5vw
+
+.a-title
+  h3
+    font-family: Lasco-Regular
+    font-size: 1.2vw
+    margin: 0px
+
+.a-description
+  font-family: Roboto-Regular
+  font-size: 1vw
+  line-height: 1.5
+  text-align: center
+
+/*-------------------------------- Stats ------------------------------*/
+.our-statistic
+  display: flex
+  justify-content: space-evenly
+  width: 95%
+  flex-wrap: nowrap
+
+.stats-item
+  width: 30%
+  justify-content: center
+
+.s-icon, .s-title, .s-number
+  justify-self: center
+
+.s-icon
+  font-size: 5vw
+
+.s-title
+  h3
+    font-family: Lasco-Regular
+    font-size: 1.2vw
+    margin: 0px
+
+.s-number
+  font-family: Roboto-Bold
+  font-size: 2.3vw
+  line-height: 1.5
+  text-align: center
+  letter-spacing: 0.5vw
+
+
+/*-------------------------------- T H I R D   S C R E E N------------------------------*/
+
+.third-screen
+  width: 100%
+  height: 100vh
+
+.third-screen-overlay
+  width: 100%
+  height: 80vh
+  background-image: url("../img/3s-back.jpg")
+  background-size: cover
+
+.td-container
+  grid-template-columns: 2fr 1fr
+  justify-self: center
+  background-color:  rgba(0, 0, 0, 0.6)
+  height: 100%
+  width: 80%
+  grid-gap: 5%
+
+.left-block, .right-block
+  height: 80%
+
+.left-block
+  height: 80%
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  grid-gap: 5%
+  justify-items: center
+  align-items: center
+
+.step-item
+  align-content: start
+  justify-items: center
+  width: 75%
+  &::after
+    position: absolute
+    content: '01'
+    font-family: "Roboto"
+    color: #fff
+    font-size: 6vw
+    font-weight: 700
+    background-image: linear-gradient(75deg, #000, #fff)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    opacity: 0.3
+    margin-top: 10vh
+    margin-left: 7vw
+    z-index: 0
+
+.step-icon
+  color: #fff
+  font-size: 3.5vw
+
+.step-description
+  color: #fff
+  font-family: Roboto-Regular
+  font-size: 0.9vw
+  letter-spacing: 0.1vw
+
+
+.step-item:nth-child(2)
+  &::after
+      content: '02'
+
+.step-item:nth-child(3)
+    &::after
+      content: '03'
+
+.step-item:nth-child(4)
+    &::after
+      content: '04'
+
+
+.step-item:nth-child(5)
+    &::after
+      content: '05'
+
+.step-item:nth-child(6)
+    &::after
+      content: '06'
+
+.btn-order
+  @extend .btn-main
+  width: 6vw
+  padding: 0.6vw 3vw 0.6vw 2.3vw
+  margin-top: 5vh
+  height: 1.5vw
+
+.right-block
+  width: 90%
+  justify-items: center
+  justify-content: center
+  grid-template-rows: 1fr 3fr
+
+.consult-title
+    color: white
+    font-family: Roboto-Bold
+    font-size: 1.2vw
+    justify-self: center
+    width: 90%
+    letter-spacing: 0.1vw
+
+
+.consult-form
+  justify-self: center
+  width: 90%
+
+
+  input
+    height: 3vh
+    width: 100%
+    font-size: 1vw
+    font-family: Roboto-Regular
+  textarea
+    width: 100%
+    font-size: 1vw
+    font-family: Roboto-Regular
+
+  input[type="submit"]
+    background-color: rgba(0, 0, 0, 0.4)
+    color: white
+    border-radius: 5vw
+    height: 3vw
+    width: 65%
+    font-family: Lasco-Regular
+    font-size: 1vw
+    border: 0.15vw #fff solid
+
+
+/*-------------------------------- F O U R T H   S C R E E N------------------------------*/
+
+.fourth-screen
+  height: 100vh
+  width: 100%
+  grid-auto-rows: 10% 50% 40%
+
+.reviews-block
+  width: 80%
+  justify-self: center
+  align-self: center
+
+.review-item
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  width: 90%
+  blockquote
+    height: 35%
+    p
+      font-family: Roboto-Regular
+      font-size: 1vw
+      letter-spacing: 0.05vw
+      line-height: 1.5
+
+  img
+    width: 16vw
+    height: 9vw
+
+.rw-name
+  font-family: Roboto-Bold
+  font-size: 1.5vw
+  letter-spacing: 0.1vw
+
+/*-------------------------------- F O O T E R------------------------------*/
+
+footer
+  background-image: linear-gradient(75deg, #b5dcf8, #c6d8e8)
+  border-top: 0.25vw lightgrey solid
+
+.footer-line
+  width: 100%
+  justify-self: center
+  border-bottom: 0.1vw solid black
+  height: 30%
+  align-items: center
+  grid-template-columns: 45% 45%
+  justify-content: space-between
+
+.footline-left
+  margin-left: $first-string
+  height: 80%
+  grid-template-columns: 1fr 3fr
+  .logo
+    width: 80%
+    background: url("../img/logo_black.png") no-repeat center
+    background-size: contain
+.brand-slogan
+  align-items: center
+  display: grid
+  .service-name
+    color: #000
+    font-family: Roboto-Bold
+    font-size: 3vw
+    margin: 0px 0px 0.5vw 0px
+  .slogan
+    margin-left: 3.4vw
+    color: black
+    font-family: Lasco-Bold
+    font-size: 0.7vw
+    letter-spacing: 0.16vw
+    &::before
+      content: ""
+      position: absolute
+      margin-top: 0.35vw
+      margin-left: -3.5vw
+      width: 3vw
+      height: 2px
+      background-image: -webkit-linear-gradient(117deg, #000 0%, #011 100%)
+      background-image: -ms-linear-gradient(117deg, #000 0%, #011 100%)
+
+.footline-right
+  grid-template-columns: 40% 40%
+
+  .location, .working-hours
+    width: 90%
+    i,span, a
+      color: #000
+  .location
+    justify-content: space-around
+
+.footer-content
+  justify-self: center
+  margin-left: $first-string
+  width: 90%
+  grid-template-columns: 45% 45%
+  justify-content: space-between
+
+.footcont-left
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+
+.footer-nav
+  list-style-type: none
+  font-family: Roboto-Regular
+  font-size: 1vw
+  text-transform: uppercase
+  line-height: 2
+  li
+    a
+      color: #000
+      text-decoration: none
+
+.footcont-left
+  grid-row-gap: 5%
+  .social-links
+    grid-row-gap: 5%
+    align-content: space-between
+    span, i
+      color: #000
+.footcont-right
+  padding: 1vw
