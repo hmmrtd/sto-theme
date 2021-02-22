@@ -1,0 +1,69 @@
+.order-header {
+    display: grid;
+    background: url(assets/img/order-header.jpg) bottom;
+    height: 40vw;
+    background-size: cover;
+    margin-top: -10%;
+    z-index: -1;
+}
+
+
+.o-overlay{
+  background: rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(45deg, rgba(25,0,150,0.25), rgba(0,255,0, 0.20) 150%);
+  height: 100%;
+  width: 100%;
+}
+
+.o-h2 {
+  margin-top: 30%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 40%;
+  height: 7%;
+  padding: 1%;
+  margin-left: 10vw;
+  border-radius: 1vw 1vw 1vw 1vw;
+}
+
+.o-h2::before{
+  content: none;
+}
+
+.sv-cat-block{
+  width: 100%;
+  grid-row-gap: 10%;
+  margin-top: 10%;
+}
+
+.sv-cat-item{
+  width: 100%;
+  height: 40vh;
+}
+
+.sv-cat-item .cat-title-block{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.sv-cat-item .cat-title{
+  color: white;
+  font-family: Roboto-Regular;
+  font-size: 2vw;
+}
+
+.sv-cat-item .sv-cat-overlay{
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.sv-cat-item .title-block{
+  margin-left: 5%;
+  margin-top: 5%;
+  height: 60%;
+}
+
+.sv-cat-item:nth-child(1){ background: url(assets/img/sv-cat1.jpg) center; background-size: cover; }
+.sv-cat-item:nth-child(2){ background: url(assets/img/sv4.jpg) center; background-size: cover; }
+.sv-cat-item:nth-child(3){ background: url(assets/img/sv5.jpg) center; background-size: cover; }
